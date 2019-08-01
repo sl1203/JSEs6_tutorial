@@ -1,0 +1,496 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Javascript ES6 Tutorial</title>
+  </head>
+  <body>
+    <h2 id="whatarearrowfunctions" style="box-sizing: border-box;
+      margin: 0px 0px 16px; padding: 0px; direction: ltr; font-family:
+      Roboto, &quot;Helvetica Neue&quot;, Helvetica, Helvetica, Arial,
+      sans-serif; font-weight: 700; font-style: normal; color: rgb(38,
+      38, 38); text-rendering: optimizelegibility; line-height:
+      2.66667rem; font-size: 1.95313rem; letter-spacing: -0.02em;
+      font-variant-ligatures: normal; font-variant-caps: normal;
+      orphans: 2; text-align: start; text-indent: 0px; text-transform:
+      none; white-space: normal; widows: 2; word-spacing: 0px;
+      -webkit-text-stroke-width: 0px; background-color: rgb(255, 255,
+      255); text-decoration-style: initial; text-decoration-color:
+      initial;">What Are Arrow Functions?</h2>
+    <p style="box-sizing: border-box; margin: 0px 0px 1.77778rem;
+      padding: 0px; direction: ltr; font-family: Roboto, &quot;Helvetica
+      Neue&quot;, Helvetica, Helvetica, Arial, sans-serif; font-weight:
+      300; font-size: 1rem; line-height: 1.77778rem; text-rendering:
+      optimizelegibility; word-spacing: 0.3px; color: rgb(58, 58, 58);
+      font-style: normal; font-variant-ligatures: normal;
+      font-variant-caps: normal; letter-spacing: normal; orphans: 2;
+      text-align: start; text-indent: 0px; text-transform: none;
+      white-space: normal; widows: 2; -webkit-text-stroke-width: 0px;
+      background-color: rgb(255, 255, 255); text-decoration-style:
+      initial; text-decoration-color: initial;">Arrow functions&nbsp;<span>
+      </span><code class=" language-javascript" style="box-sizing:
+        border-box; font-family: Consolas, Monaco, &quot;Andale
+        Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; font-size: 1em;
+        font-weight: 400; color: rgb(0, 0, 0); line-height: 1.5;
+        background: rgb(245, 242, 240); padding: 0.1em; border-radius:
+        0.3em; text-shadow: rgb(255, 255, 255) 0px 1px; text-align:
+        left; white-space: normal; word-spacing: normal; word-break:
+        normal; overflow-wrap: normal; tab-size: 4; hyphens: none;"><span
+          class="token operator" style="box-sizing: border-box; color:
+          rgb(166, 127, 89); background: rgba(255, 255, 255, 0.5);">=&gt;</span></code>,<span>
+      </span> are a more concise syntax for writing function
+      expressions. They are similar to <u><i>lambda </i></u>function
+      in Python, and offer a concise syntax.&nbsp; <span><span
+          style="color: rgb(58, 58, 58); font-family: Roboto,
+          &quot;Helvetica Neue&quot;, Helvetica, Helvetica, Arial,
+          sans-serif; font-size: 20.25px; font-style: normal;
+          font-variant-ligatures: normal; font-variant-caps: normal;
+          font-weight: 300; letter-spacing: normal; orphans: 2;
+          text-align: start; text-indent: 0px; text-transform: none;
+          white-space: normal; widows: 2; word-spacing: 0.3px;
+          -webkit-text-stroke-width: 0px; background-color: rgb(255,
+          255, 255); text-decoration-style: initial;
+          text-decoration-color: initial; display: inline !important;
+          float: none;"><span>With </span>arrow function, we don't have
+          to use </span><code class=" language-javascript"
+          style="box-sizing: border-box; font-family: Consolas, Monaco,
+          &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace;
+          font-size: 20.25px; font-weight: 400; color: rgb(0, 0, 0);
+          line-height: 1.5; background: rgb(245, 242, 240); padding:
+          0.1em; border-radius: 0.3em; text-shadow: rgb(255, 255, 255)
+          0px 1px; text-align: left; white-space: normal; word-spacing:
+          normal; word-break: normal; overflow-wrap: normal; tab-size:
+          4; hyphens: none; font-style: normal; font-variant-ligatures:
+          normal; font-variant-caps: normal; letter-spacing: normal;
+          orphans: 2; text-indent: 0px; text-transform: none; widows: 2;
+          -webkit-text-stroke-width: 0px; text-decoration-style:
+          initial; text-decoration-color: initial;"><span class="token
+            keyword" style="box-sizing: border-box; color: rgb(0, 119,
+            170);">function</span></code><span style="color: rgb(58, 58,
+          58); font-family: Roboto, &quot;Helvetica Neue&quot;,
+          Helvetica, Helvetica, Arial, sans-serif; font-size: 20.25px;
+          font-style: normal; font-variant-ligatures: normal;
+          font-variant-caps: normal; font-weight: 300; letter-spacing:
+          normal; orphans: 2; text-align: start; text-indent: 0px;
+          text-transform: none; white-space: normal; widows: 2;
+          word-spacing: 0.3px; -webkit-text-stroke-width: 0px;
+          background-color: rgb(255, 255, 255); text-decoration-style:
+          initial; text-decoration-color: initial; display: inline
+          !important; float: none;"><span> and</span><span> </span></span><code
+          class=" language-javascript" style="box-sizing: border-box;
+          font-family: Consolas, Monaco, &quot;Andale Mono&quot;,
+          &quot;Ubuntu Mono&quot;, monospace; font-size: 20.25px;
+          font-weight: 400; color: rgb(0, 0, 0); line-height: 1.5;
+          background: rgb(245, 242, 240); padding: 0.1em; border-radius:
+          0.3em; text-shadow: rgb(255, 255, 255) 0px 1px; text-align:
+          left; white-space: normal; word-spacing: normal; word-break:
+          normal; overflow-wrap: normal; tab-size: 4; hyphens: none;
+          font-style: normal; font-variant-ligatures: normal;
+          font-variant-caps: normal; letter-spacing: normal; orphans: 2;
+          text-indent: 0px; text-transform: none; widows: 2;
+          -webkit-text-stroke-width: 0px; text-decoration-style:
+          initial; text-decoration-color: initial;"><span class="token
+            keyword" style="box-sizing: border-box; color: rgb(0, 119,
+            170);">return</span></code><span style="color: rgb(58, 58,
+          58); font-family: Roboto, &quot;Helvetica Neue&quot;,
+          Helvetica, Helvetica, Arial, sans-serif; font-size: 20.25px;
+          font-style: normal; font-variant-ligatures: normal;
+          font-variant-caps: normal; font-weight: 300; letter-spacing:
+          normal; orphans: 2; text-align: start; text-indent: 0px;
+          text-transform: none; white-space: normal; widows: 2;
+          word-spacing: 0.3px; -webkit-text-stroke-width: 0px;
+          background-color: rgb(255, 255, 255); text-decoration-style:
+          initial; text-decoration-color: initial; display: inline
+          !important; float: none;"><span>&nbsp;</span>keywords (it’s
+          implicit in arrow functions).<br>
+        </span></span></p>
+    <p style="box-sizing: border-box; margin: 0px 0px 1.77778rem;
+      padding: 0px; direction: ltr; font-family: Roboto, &quot;Helvetica
+      Neue&quot;, Helvetica, Helvetica, Arial, sans-serif; font-weight:
+      300; font-size: 1rem; line-height: 1.77778rem; text-rendering:
+      optimizelegibility; word-spacing: 0.3px; color: rgb(58, 58, 58);
+      font-style: normal; font-variant-ligatures: normal;
+      font-variant-caps: normal; letter-spacing: normal; orphans: 2;
+      text-align: start; text-indent: 0px; text-transform: none;
+      white-space: normal; widows: 2; -webkit-text-stroke-width: 0px;
+      background-color: rgb(255, 255, 255); text-decoration-style:
+      initial; text-decoration-color: initial;"><span><span
+          style="color: rgb(58, 58, 58); font-family: Roboto,
+          &quot;Helvetica Neue&quot;, Helvetica, Helvetica, Arial,
+          sans-serif; font-size: 20.25px; font-style: normal;
+          font-variant-ligatures: normal; font-variant-caps: normal;
+          font-weight: 300; letter-spacing: normal; orphans: 2;
+          text-align: start; text-indent: 0px; text-transform: none;
+          white-space: normal; widows: 2; word-spacing: 0.3px;
+          -webkit-text-stroke-width: 0px; background-color: rgb(255,
+          255, 255); text-decoration-style: initial;
+          text-decoration-color: initial; display: inline !important;
+          float: none;">Example:<br>
+        </span></span></p>
+    <h3
+id="basicsyntaxwithmultipleparametersfrommdnhttpsdevelopermozillaorgenusdocswebjavascriptreferencefunctionsarrow_functions"
+      style="box-sizing: border-box; margin: 0px; padding: 0px;
+      direction: ltr; font-family: Roboto, &quot;Helvetica Neue&quot;,
+      Helvetica, Helvetica, Arial, sans-serif; font-weight: 700;
+      font-style: normal; color: rgb(38, 38, 38); text-rendering:
+      optimizelegibility; line-height: 1.77778rem; font-size: 1.5625rem;
+      letter-spacing: -0.02em; font-variant-ligatures: normal;
+      font-variant-caps: normal; orphans: 2; text-align: start;
+      text-indent: 0px; text-transform: none; white-space: normal;
+      widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;
+      background-color: rgb(255, 255, 255); text-decoration-style:
+      initial; text-decoration-color: initial;">Basic Syntax with
+      Multiple Parameters <br>
+    </h3>
+    <pre class=" language-javascript" style="box-sizing: border-box; font-family: Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; font-size: 1rem; white-space: pre; margin: 0.5em 0px 32px; padding: 1em; direction: ltr; font-weight: 300; line-height: 1.5; color: rgb(0, 0, 0); background: rgb(249, 249, 250); text-shadow: rgb(255, 255, 255) 0px 1px; text-align: left; word-spacing: 0px; word-break: normal; overflow-wrap: normal; tab-size: 4; hyphens: none; overflow: auto; border: 1px solid rgba(51, 51, 51, 0.1); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><code class="javascript  language-javascript" style="box-sizing: border-box; font-family: Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; font-size: 0.8rem; font-weight: 400; color: rgb(0, 0, 0); line-height: 1.5; background: transparent; padding: 3px; border-radius: 3px; text-shadow: rgb(255, 255, 255) 0px 1px; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; overflow-wrap: normal; tab-size: 4; hyphens: none;">
+<span class="token comment" style="box-sizing: border-box; color: rgb(112, 128, 144);">// ES5</span>
+<span class="token keyword" style="box-sizing: border-box; color: rgb(0, 119, 170);">var</span> <span class="token function-variable function" style="box-sizing: border-box; color: rgb(221, 74, 104);">add</span> <span class="token operator" style="box-sizing: border-box; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.5);">=</span> <span class="token keyword" style="box-sizing: border-box; color: rgb(0, 119, 170);">function</span><span class="token punctuation" style="box-sizing: border-box; color: rgb(153, 153, 153);">(</span><span class="token parameter" style="box-sizing: border-box;">x<span class="token punctuation" style="box-sizing: border-box; color: rgb(153, 153, 153);">,</span> y</span><span class="token punctuation" style="box-sizing: border-box; color: rgb(153, 153, 153);">)</span> <span class="token punctuation" style="box-sizing: border-box; color: rgb(153, 153, 153);">{</span>
+  <span class="token keyword" style="box-sizing: border-box; color: rgb(0, 119, 170);">return</span> x <span class="token operator" style="box-sizing: border-box; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.5);">+</span> y<span class="token punctuation" style="box-sizing: border-box; color: rgb(153, 153, 153);">;</span>
+<span class="token punctuation" style="box-sizing: border-box; color: rgb(153, 153, 153);">}</span><span class="token punctuation" style="box-sizing: border-box; color: rgb(153, 153, 153);">;</span>
+
+<span class="token comment" style="box-sizing: border-box; color: rgb(112, 128, 144);">// ES6</span>
+<span class="token keyword" style="box-sizing: border-box; color: rgb(0, 119, 170);">const</span> <span class="token function-variable function" style="box-sizing: border-box; color: rgb(221, 74, 104);">addES6</span> <span class="token operator" style="box-sizing: border-box; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.5);">=</span> <span class="token punctuation" style="box-sizing: border-box; color: rgb(153, 153, 153);">(</span><span class="token parameter" style="box-sizing: border-box;">x<span class="token punctuation" style="box-sizing: border-box; color: rgb(153, 153, 153);">,</span> y</span><span class="token punctuation" style="box-sizing: border-box; color: rgb(153, 153, 153);">)</span> <span class="token operator" style="box-sizing: border-box; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.5);">=&gt;</span><span class="token punctuation" style="box-sizing: border-box; color: rgb(153, 153, 153);"></span><span class="token keyword" style="box-sizing: border-box; color: rgb(0, 119, 170);"></span> x <span class="token operator" style="box-sizing: border-box; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.5);">+</span> y <span class="token punctuation" style="box-sizing: border-box; color: rgb(153, 153, 153);"></span><span class="token punctuation" style="box-sizing: border-box; color: rgb(153, 153, 153);">;</span></code></pre>
+    <p style="box-sizing: border-box; margin: 0px 0px 1.77778rem;
+      padding: 0px; direction: ltr; font-family: Roboto, &quot;Helvetica
+      Neue&quot;, Helvetica, Helvetica, Arial, sans-serif; font-weight:
+      300; font-size: 1rem; line-height: 1.77778rem; text-rendering:
+      optimizelegibility; word-spacing: 0.3px; color: rgb(58, 58, 58);
+      font-style: normal; font-variant-ligatures: normal;
+      font-variant-caps: normal; letter-spacing: normal; orphans: 2;
+      text-align: start; text-indent: 0px; text-transform: none;
+      white-space: normal; widows: 2; -webkit-text-stroke-width: 0px;
+      background-color: rgb(255, 255, 255); text-decoration-style:
+      initial; text-decoration-color: initial;">It's simple and
+      concise!!! However, if there are multiple lines of codes within
+      the arrow function, we still have to use <span><span
+          style="color: rgb(58, 58, 58); font-family: Roboto,
+          &quot;Helvetica Neue&quot;, Helvetica, Helvetica, Arial,
+          sans-serif; font-size: 20.25px; font-style: normal;
+          font-variant-ligatures: normal; font-variant-caps: normal;
+          font-weight: 300; letter-spacing: normal; orphans: 2;
+          text-align: start; text-indent: 0px; text-transform: none;
+          white-space: normal; widows: 2; word-spacing: 0.3px;
+          -webkit-text-stroke-width: 0px; background-color: rgb(255,
+          255, 255); text-decoration-style: initial;
+          text-decoration-color: initial; display: inline !important;
+          float: none;"></span><code class=" language-javascript"
+          style="box-sizing: border-box; font-family: Consolas, Monaco,
+          &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace;
+          font-size: 20.25px; font-weight: 400; color: rgb(0, 0, 0);
+          line-height: 1.5; background: rgb(245, 242, 240); padding:
+          0.1em; border-radius: 0.3em; text-shadow: rgb(255, 255, 255)
+          0px 1px; text-align: left; white-space: normal; word-spacing:
+          normal; word-break: normal; overflow-wrap: normal; tab-size:
+          4; hyphens: none; font-style: normal; font-variant-ligatures:
+          normal; font-variant-caps: normal; letter-spacing: normal;
+          orphans: 2; text-indent: 0px; text-transform: none; widows: 2;
+          -webkit-text-stroke-width: 0px; text-decoration-style:
+          initial; text-decoration-color: initial;"><span class="token
+            keyword" style="box-sizing: border-box; color: rgb(0, 119,
+            170);">function</span></code><span style="color: rgb(58, 58,
+          58); font-family: Roboto, &quot;Helvetica Neue&quot;,
+          Helvetica, Helvetica, Arial, sans-serif; font-size: 20.25px;
+          font-style: normal; font-variant-ligatures: normal;
+          font-variant-caps: normal; font-weight: 300; letter-spacing:
+          normal; orphans: 2; text-align: start; text-indent: 0px;
+          text-transform: none; white-space: normal; widows: 2;
+          word-spacing: 0.3px; -webkit-text-stroke-width: 0px;
+          background-color: rgb(255, 255, 255); text-decoration-style:
+          initial; text-decoration-color: initial; display: inline
+          !important; float: none;"><span> and</span>,<span>&nbsp;</span></span><code
+          class=" language-javascript" style="box-sizing: border-box;
+          font-family: Consolas, Monaco, &quot;Andale Mono&quot;,
+          &quot;Ubuntu Mono&quot;, monospace; font-size: 20.25px;
+          font-weight: 400; color: rgb(0, 0, 0); line-height: 1.5;
+          background: rgb(245, 242, 240); padding: 0.1em; border-radius:
+          0.3em; text-shadow: rgb(255, 255, 255) 0px 1px; text-align:
+          left; white-space: normal; word-spacing: normal; word-break:
+          normal; overflow-wrap: normal; tab-size: 4; hyphens: none;
+          font-style: normal; font-variant-ligatures: normal;
+          font-variant-caps: normal; letter-spacing: normal; orphans: 2;
+          text-indent: 0px; text-transform: none; widows: 2;
+          -webkit-text-stroke-width: 0px; text-decoration-style:
+          initial; text-decoration-color: initial;"><span class="token
+            keyword" style="box-sizing: border-box; color: rgb(0, 119,
+            170);">return</span></code><span style="color: rgb(58, 58,
+          58); font-family: Roboto, &quot;Helvetica Neue&quot;,
+          Helvetica, Helvetica, Arial, sans-serif; font-size: 20.25px;
+          font-style: normal; font-variant-ligatures: normal;
+          font-variant-caps: normal; font-weight: 300; letter-spacing:
+          normal; orphans: 2; text-align: start; text-indent: 0px;
+          text-transform: none; white-space: normal; widows: 2;
+          word-spacing: 0.3px; -webkit-text-stroke-width: 0px;
+          background-color: rgb(255, 255, 255); text-decoration-style:
+          initial; text-decoration-color: initial; display: inline
+          !important; float: none;"><span>&nbsp;</span>keywords.</span></span></p>
+    <h3 id="e37f" class="kw kx eb aq ap dz ky kz la lb lc ld le lf lg lh
+      li" data-selectable-paragraph="" style="box-sizing: inherit;
+      margin: 1.72em 0px -0.31em; font-family:
+      medium-content-sans-serif-font, &quot;Lucida Grande&quot;,
+      &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva,
+      Arial, sans-serif; font-style: normal; font-weight: 600; color:
+      rgba(0, 0, 0, 0.84); line-height: 1.18; letter-spacing: -0.022em;
+      font-size: 26px; font-variant-ligatures: normal;
+      font-variant-caps: normal; orphans: 2; text-align: start;
+      text-indent: 0px; text-transform: none; white-space: normal;
+      widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;
+      background-color: rgb(255, 255, 255); text-decoration-style:
+      initial; text-decoration-color: initial;">Arrow Functions and Map,
+      Filter, &amp; Reduce (function of array)</h3>
+    <p><br>
+      <br>
+    </p>
+    <p id="7230" class="kc kd eb aq kf b kg lj ki lk kk ll km lm ko ln
+      kq" data-selectable-paragraph="" style="box-sizing: inherit;
+      margin: 0.86em 0px -0.46em; font-weight: 400; font-style: normal;
+      color: rgba(0, 0, 0, 0.84); line-height: 1.58; letter-spacing:
+      -0.004em; font-family: medium-content-serif-font, Georgia,
+      Cambria, &quot;Times New Roman&quot;, Times, serif; font-size:
+      21px; font-variant-ligatures: normal; font-variant-caps: normal;
+      orphans: 2; text-align: start; text-indent: 0px; text-transform:
+      none; white-space: normal; widows: 2; word-spacing: 0px;
+      -webkit-text-stroke-width: 0px; background-color: rgb(255, 255,
+      255); text-decoration-style: initial; text-decoration-color:
+      initial;">Consider the following data:</p>
+    <pre class="jm jn jo jp jq hn fe ci" style="box-sizing: inherit; margin: 56px 0px 0px; overflow-x: auto; background: rgba(0, 0, 0, 0.05); padding: 20px; color: rgba(0, 0, 0, 0.8); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><span id="2375" class="kw kx eb aq lt b ee mh mi n mj" data-selectable-paragraph="" style="box-sizing: inherit; font-weight: 400; display: block; font-style: normal; color: rgba(0, 0, 0, 0.84); font-size: 16px; line-height: 1.18; letter-spacing: -0.022em; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace; margin-top: -0.09em; margin-bottom: -0.09em; white-space: pre-wrap;">data = [<br style="box-sizing: inherit;">  {<br style="box-sizing: inherit;">    name: 'John',<br style="box-sizing: inherit;">    age: 6,<br>    gender: 'M',<br style="box-sizing: inherit;">    grade: 1<br style="box-sizing: inherit;">  },<br style="box-sizing: inherit;">  {<br style="box-sizing: inherit;">    name: 'Lizzy',<br style="box-sizing: inherit;">    age: 16,<br style="box-sizing: inherit;"></span><span id="2375" class="kw kx eb aq lt b ee mh mi n mj" data-selectable-paragraph="" style="box-sizing: inherit; font-weight: 400; display: block; font-style: normal; color: rgba(0, 0, 0, 0.84); font-size: 16px; line-height: 1.18; letter-spacing: -0.022em; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace; margin-top: -0.09em; margin-bottom: -0.09em; white-space: pre-wrap;"><span id="2375" class="kw kx eb aq lt b ee mh mi n mj" data-selectable-paragraph="" style="box-sizing: inherit; font-weight: 400; display: block; font-style: normal; color: rgba(0, 0, 0, 0.84); font-size: 16px; line-height: 1.18; letter-spacing: -0.022em; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace; margin-top: -0.09em; margin-bottom: -0.09em; white-space: pre-wrap;">    gender: 'F',</span>
+    grade: 10<br style="box-sizing: inherit;">  },<br style="box-sizing: inherit;">  {<br style="box-sizing: inherit;">    name: 'David',<br style="box-sizing: inherit;">    age: 18,<br></span><br style="box-sizing: inherit;"><span id="2375" class="kw kx eb aq lt b ee mh mi n mj" data-selectable-paragraph="" style="box-sizing: inherit; font-weight: 400; display: block; font-style: normal; color: rgba(0, 0, 0, 0.84); font-size: 16px; line-height: 1.18; letter-spacing: -0.022em; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace; margin-top: -0.09em; margin-bottom: -0.09em; white-space: pre-wrap;"><span id="2375" class="kw kx eb aq lt b ee mh mi n mj" data-selectable-paragraph="" style="box-sizing: inherit; font-weight: 400; display: block; font-style: normal; color: rgba(0, 0, 0, 0.84); font-size: 16px; line-height: 1.18; letter-spacing: -0.022em; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace; margin-top: -0.09em; margin-bottom: -0.09em; white-space: pre-wrap;">    gender: 'M',<br style="box-sizing: inherit;"></span>
+    grade: 12<br style="box-sizing: inherit;">  },<br style="box-sizing: inherit;">  {<br style="box-sizing: inherit;">    name: 'Joey',<br style="box-sizing: inherit;">    age: 10,<br style="box-sizing: inherit;"></span><span id="2375" class="kw kx eb aq lt b ee mh mi n mj" data-selectable-paragraph="" style="box-sizing: inherit; font-weight: 400; display: block; font-style: normal; color: rgba(0, 0, 0, 0.84); font-size: 16px; line-height: 1.18; letter-spacing: -0.022em; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace; margin-top: -0.09em; margin-bottom: -0.09em; white-space: pre-wrap;"><span id="2375" class="kw kx eb aq lt b ee mh mi n mj" data-selectable-paragraph="" style="box-sizing: inherit; font-weight: 400; display: block; font-style: normal; color: rgba(0, 0, 0, 0.84); font-size: 16px; line-height: 1.18; letter-spacing: -0.022em; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace; margin-top: -0.09em; margin-bottom: -0.09em; white-space: pre-wrap;">    gender: 'M',<br style="box-sizing: inherit;"></span>
+    grade: 5<br style="box-sizing: inherit;">  }<br style="box-sizing: inherit;">];</span></pre>
+    <p id="a608" class="kc kd eb aq kf b kg kh ki kj kk kl km kn ko kp
+      kq" data-selectable-paragraph="" style="box-sizing: inherit;
+      margin: 2em 0px -0.46em; font-weight: 400; font-style: normal;
+      color: rgba(0, 0, 0, 0.84); line-height: 1.58; letter-spacing:
+      -0.004em; font-family: medium-content-serif-font, Georgia,
+      Cambria, &quot;Times New Roman&quot;, Times, serif; font-size:
+      21px; font-variant-ligatures: normal; font-variant-caps: normal;
+      orphans: 2; text-align: start; text-indent: 0px; text-transform:
+      none; white-space: normal; widows: 2; word-spacing: 0px;
+      -webkit-text-stroke-width: 0px; background-color: rgb(255, 255,
+      255); text-decoration-style: initial; text-decoration-color:
+      initial;">As you can see we have an array of objects. Each object
+      represents a student, with a<span>&nbsp;</span><code class="jv lr
+        ls lt b" style="box-sizing: inherit; font-weight: 400;
+        background-color: rgba(0, 0, 0, 0.05); padding: 2px 4px;
+        font-size: 15.75px; font-family: Menlo, Monaco, &quot;Courier
+        New&quot;, Courier, monospace;">name</code>, an<span>&nbsp;</span><code
+        class="jv lr ls lt b" style="box-sizing: inherit; font-weight:
+        400; background-color: rgba(0, 0, 0, 0.05); padding: 2px 4px;
+        font-size: 15.75px; font-family: Menlo, Monaco, &quot;Courier
+        New&quot;, Courier, monospace;">age</code>, and a<span> grade</span>.</p>
+    <br>
+    <p id="b997" class="kc kd eb aq kf b kg kh ki kj kk kl km kn ko kp
+      kq" data-selectable-paragraph="" style="box-sizing: inherit;
+      margin: 2em 0px -0.46em; font-weight: 400; font-style: normal;
+      color: rgba(0, 0, 0, 0.84); line-height: 1.58; letter-spacing:
+      -0.004em; font-family: medium-content-serif-font, Georgia,
+      Cambria, &quot;Times New Roman&quot;, Times, serif; font-size:
+      21px; font-variant-ligatures: normal; font-variant-caps: normal;
+      orphans: 2; text-align: start; text-indent: 0px; text-transform:
+      none; white-space: normal; widows: 2; word-spacing: 0px;
+      -webkit-text-stroke-width: 0px; background-color: rgb(255, 255,
+      255); text-decoration-style: initial; text-decoration-color:
+      initial;">Our filter method <code>only return 'F' (Female)
+        student</code><code class="jv lr ls lt b" style="box-sizing:
+        inherit; font-weight: 400; background-color: rgba(0, 0, 0,
+        0.05); padding: 2px 4px; font-size: 15.75px; font-family: Menlo,
+        Monaco, &quot;Courier New&quot;, Courier, monospace;"></code>:</p>
+    <pre class="jm jn jo jp jq hn fe ci" style="box-sizing: inherit; margin: 56px 0px 0px; overflow-x: auto; background: rgba(0, 0, 0, 0.05); padding: 20px; color: rgba(0, 0, 0, 0.8); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><span id="7dd2" class="kw kx eb aq lt b ee mh mi n mj" data-selectable-paragraph="" style="box-sizing: inherit; font-weight: 400; display: block; font-style: normal; color: rgba(0, 0, 0, 0.84); font-size: 16px; line-height: 1.18; letter-spacing: -0.022em; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace; margin-top: -0.09em; margin-bottom: -0.09em; white-space: pre-wrap;">let femaleStudents= data.<strong class="lt kv" style="box-sizing: inherit; font-weight: 700; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace;">filter</strong>((student) =&gt; {<br style="box-sizing: inherit;">  <strong class="lt kv" style="box-sizing: inherit; font-weight: 700; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace;">return student.gender === 'F';</strong><br style="box-sizing: inherit;">})</span></pre>
+    <p id="bf64" class="kc kd eb aq kf b kg kh ki kj kk kl km kn ko kp
+      kq" data-selectable-paragraph="" style="box-sizing: inherit;
+      margin: 2em 0px -0.46em; font-weight: 400; font-style: normal;
+      color: rgba(0, 0, 0, 0.84); line-height: 1.58; letter-spacing:
+      -0.004em; font-family: medium-content-serif-font, Georgia,
+      Cambria, &quot;Times New Roman&quot;, Times, serif; font-size:
+      21px; font-variant-ligatures: normal; font-variant-caps: normal;
+      orphans: 2; text-align: start; text-indent: 0px; text-transform:
+      none; white-space: normal; widows: 2; word-spacing: 0px;
+      -webkit-text-stroke-width: 0px; background-color: rgb(255, 255,
+      255); text-decoration-style: initial; text-decoration-color:
+      initial;">Or we can simplify further:<br>
+    </p>
+    <pre class="jm jn jo jp jq hn fe ci" style="box-sizing: inherit; margin: 56px 0px 0px; overflow-x: auto; background: rgba(0, 0, 0, 0.05); padding: 20px; color: rgba(0, 0, 0, 0.8); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><span id="7dd2" class="kw kx eb aq lt b ee mh mi n mj" data-selectable-paragraph="" style="box-sizing: inherit; font-weight: 400; display: block; font-style: normal; color: rgba(0, 0, 0, 0.84); font-size: 16px; line-height: 1.18; letter-spacing: -0.022em; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace; margin-top: -0.09em; margin-bottom: -0.09em; white-space: pre-wrap;">let femaleStudents= data.<strong class="lt kv" style="box-sizing: inherit; font-weight: 700; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace;">filter</strong>((student) =&gt;<strong> </strong><strong class="lt kv" style="box-sizing: inherit; font-weight: 700; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace;">student.gender === 'F');</strong><br></span></pre>
+    <p id="bf64" class="kc kd eb aq kf b kg kh ki kj kk kl km kn ko kp
+      kq" data-selectable-paragraph="" style="box-sizing: inherit;
+      margin: 2em 0px -0.46em; font-weight: 400; font-style: normal;
+      color: rgba(0, 0, 0, 0.84); line-height: 1.58; letter-spacing:
+      -0.004em; font-family: medium-content-serif-font, Georgia,
+      Cambria, &quot;Times New Roman&quot;, Times, serif; font-size:
+      21px; font-variant-ligatures: normal; font-variant-caps: normal;
+      orphans: 2; text-align: start; text-indent: 0px; text-transform:
+      none; white-space: normal; widows: 2; word-spacing: 0px;
+      -webkit-text-stroke-width: 0px; background-color: rgb(255, 255,
+      255); text-decoration-style: initial; text-decoration-color:
+      initial;">Or we can filter based on the age:<br>
+    </p>
+    <pre class="jm jn jo jp jq hn fe ci" style="box-sizing: inherit; margin: 56px 0px 0px; overflow-x: auto; background: rgba(0, 0, 0, 0.05); padding: 20px; color: rgba(0, 0, 0, 0.8); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><span id="7dd2" class="kw kx eb aq lt b ee mh mi n mj" data-selectable-paragraph="" style="box-sizing: inherit; font-weight: 400; display: block; font-style: normal; color: rgba(0, 0, 0, 0.84); font-size: 16px; line-height: 1.18; letter-spacing: -0.022em; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace; margin-top: -0.09em; margin-bottom: -0.09em; white-space: pre-wrap;">data.<strong class="lt kv" style="box-sizing: inherit; font-weight: 700; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace;">filter</strong>((student) =&gt;<strong> </strong><strong class="lt kv" style="box-sizing: inherit; font-weight: 700; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace;">student.age &gt; 10 ); // return Lizzy and David</strong></span><span id="7dd2" class="kw kx eb aq lt b ee mh mi n mj" data-selectable-paragraph="" style="box-sizing: inherit; font-weight: 400; display: block; font-style: normal; color: rgba(0, 0, 0, 0.84); font-size: 16px; line-height: 1.18; letter-spacing: -0.022em; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace; margin-top: -0.09em; margin-bottom: -0.09em; white-space: pre-wrap;"><strong class="lt kv" style="box-sizing: inherit; font-weight: 700; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace;"></strong><br></span></pre>
+    <br class="Apple-interchange-newline">
+    <br>
+    <p><font size="+2">Now that we can list all the names of students.</font></p>
+    <p> </p>
+    <pre class="jm jn jo jp jq hn fe ci" style="box-sizing: inherit; margin: 56px 0px 0px; overflow-x: auto; background: rgba(0, 0, 0, 0.05); padding: 20px; color: rgba(0, 0, 0, 0.8); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><span id="7dd2" class="kw kx eb aq lt b ee mh mi n mj" data-selectable-paragraph="" style="box-sizing: inherit; font-weight: 400; display: block; font-style: normal; color: rgba(0, 0, 0, 0.84); font-size: 16px; line-height: 1.18; letter-spacing: -0.022em; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace; margin-top: -0.09em; margin-bottom: -0.09em; white-space: pre-wrap;"> data.map((student) =&gt;<strong> </strong><strong class="lt kv" style="box-sizing: inherit; font-weight: 700; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace;">student.name); // return ["John", "Lizzy", "David", "Joey"]</strong></span>
+</pre>
+    <p id="83e3" class="kc kd eb aq kf b kg kh ki kj kk kl km kn ko kp
+      kq" data-selectable-paragraph="" style="box-sizing: inherit;
+      margin: 2em 0px -0.46em; font-weight: 400; font-style: normal;
+      color: rgba(0, 0, 0, 0.84); line-height: 1.58; letter-spacing:
+      -0.004em; font-family: medium-content-serif-font, Georgia,
+      Cambria, &quot;Times New Roman&quot;, Times, serif; font-size:
+      21px; font-variant-ligatures: normal; font-variant-caps: normal;
+      orphans: 2; text-align: start; text-indent: 0px; text-transform:
+      none; white-space: normal; widows: 2; word-spacing: 0px;
+      -webkit-text-stroke-width: 0px; background-color: rgb(255, 255,
+      255); text-decoration-style: initial; text-decoration-color:
+      initial;">Sum the ages of students: (use reduce)<br>
+    </p>
+    <pre class="jm jn jo jp jq hn fe ci" style="box-sizing: inherit; margin: 56px 0px 0px; overflow-x: auto; background: rgba(0, 0, 0, 0.05); padding: 20px; color: rgba(0, 0, 0, 0.8); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><span id="262c" class="kw kx eb aq lt b ee mh mi n mj" data-selectable-paragraph="" style="box-sizing: inherit; font-weight: 400; display: block; font-style: normal; color: rgba(0, 0, 0, 0.84); font-size: 16px; line-height: 1.18; letter-spacing: -0.022em; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace; margin-top: -0.09em; margin-bottom: -0.09em; white-space: pre-wrap;">data.<strong class="lt kv" style="box-sizing: inherit; font-weight: 700; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace;">reduce</strong>((sum, student) =&gt; {<br style="box-sizing: inherit;">  <strong class="lt kv" style="box-sizing: inherit; font-weight: 700; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace;">return sum + student.age;</strong><br style="box-sizing: inherit;">}, 0); //return 50</span></pre>
+    <br>
+    <h2 id="whatarearrowfunctions" style="box-sizing: border-box;
+      margin: 0px 0px 16px; padding: 0px; direction: ltr; font-family:
+      Roboto, &quot;Helvetica Neue&quot;, Helvetica, Helvetica, Arial,
+      sans-serif; font-weight: 700; font-style: normal; color: rgb(38,
+      38, 38); text-rendering: optimizelegibility; line-height:
+      2.66667rem; font-size: 1.95313rem; letter-spacing: -0.02em;
+      font-variant-ligatures: normal; font-variant-caps: normal;
+      orphans: 2; text-align: start; text-indent: 0px; text-transform:
+      none; white-space: normal; widows: 2; word-spacing: 0px;
+      -webkit-text-stroke-width: 0px; background-color: rgb(255, 255,
+      255); text-decoration-style: initial; text-decoration-color:
+      initial;"><br>
+    </h2>
+    <p id="whatarearrowfunctions" style="box-sizing: border-box; margin:
+      0px 0px 16px; padding: 0px; direction: ltr; font-family: Roboto,
+      &quot;Helvetica Neue&quot;, Helvetica, Helvetica, Arial,
+      sans-serif; font-weight: 700; font-style: normal; color: rgb(38,
+      38, 38); text-rendering: optimizelegibility; line-height:
+      2.66667rem; font-size: 1.95313rem; letter-spacing: -0.02em;
+      font-variant-ligatures: normal; font-variant-caps: normal;
+      orphans: 2; text-align: start; text-indent: 0px; text-transform:
+      none; white-space: normal; widows: 2; word-spacing: 0px;
+      -webkit-text-stroke-width: 0px; background-color: rgb(255, 255,
+      255); text-decoration-style: initial; text-decoration-color:
+      initial;">Template Literals:<br>
+    </p>
+    <p><font size="+2">&nbsp;</font><font size="+3"><span style="color:
+          rgb(51, 51, 51); font-family: Arial, x-locale-body,
+          sans-serif; font-size: 16px; font-style: normal;
+          font-variant-ligatures: normal; font-variant-caps: normal;
+          font-weight: 400; letter-spacing: -0.04448px; orphans: 2;
+          text-align: start; text-indent: 0px; text-transform: none;
+          white-space: normal; widows: 2; word-spacing: 0px;
+          -webkit-text-stroke-width: 0px; background-color: rgb(255,
+          255, 255); text-decoration-style: initial;
+          text-decoration-color: initial; display: inline !important;
+          float: none;">From MDN: Template literals are string literals
+          allowing embedded expressions.&nbsp; </span></font><br>
+      <font size="+3"><span style="color: rgb(51, 51, 51); font-family:
+          Arial, x-locale-body, sans-serif; font-size: 16px; font-style:
+          normal; font-variant-ligatures: normal; font-variant-caps:
+          normal; font-weight: 400; letter-spacing: -0.04448px; orphans:
+          2; text-align: start; text-indent: 0px; text-transform: none;
+          white-space: normal; widows: 2; word-spacing: 0px;
+          -webkit-text-stroke-width: 0px; background-color: rgb(255,
+          255, 255); text-decoration-style: initial;
+          text-decoration-color: initial; display: inline !important;
+          float: none;"><span style="color: rgb(51, 51, 51);
+            font-family: Arial, x-locale-body, sans-serif; font-size:
+            16px; font-style: normal; font-variant-ligatures: normal;
+            font-variant-caps: normal; font-weight: 400; letter-spacing:
+            -0.04448px; orphans: 2; text-align: start; text-indent: 0px;
+            text-transform: none; white-space: normal; widows: 2;
+            word-spacing: 0px; -webkit-text-stroke-width: 0px;
+            background-color: rgb(255, 255, 255); text-decoration-style:
+            initial; text-decoration-color: initial; display: inline
+            !important; float: none;">Template literals are enclosed by
+            the back-tick (` `)</span><span style="color: rgb(51, 51,
+            51); font-family: Arial, x-locale-body, sans-serif;
+            font-size: 16px; font-style: normal; font-variant-ligatures:
+            normal; font-variant-caps: normal; font-weight: 400;
+            letter-spacing: -0.04448px; orphans: 2; text-align: start;
+            text-indent: 0px; text-transform: none; white-space: normal;
+            widows: 2; word-spacing: 0px; -webkit-text-stroke-width:
+            0px; background-color: rgb(255, 255, 255);
+            text-decoration-style: initial; text-decoration-color:
+            initial; display: inline !important; float: none;">
+            character instead of double or single quotes. Template
+            literals can contain placeholders. These are indicated by
+            the dollar sign and curly braces (</span><code
+            style="margin: 0px; padding: 0px 2px; border: 0px;
+            font-style: normal; font-weight: 400; background-color:
+            rgba(220, 220, 220, 0.5); border-radius: 2px; font-family:
+            consolas, &quot;Liberation Mono&quot;, courier, monospace;
+            overflow-wrap: break-word; color: rgb(51, 51, 51);
+            font-size: 16px; font-variant-ligatures: normal;
+            font-variant-caps: normal; letter-spacing: -0.04448px;
+            orphans: 2; text-align: start; text-indent: 0px;
+            text-transform: none; white-space: normal; widows: 2;
+            word-spacing: 0px; -webkit-text-stroke-width: 0px;
+            text-decoration-style: initial; text-decoration-color:
+            initial;">${expression}</code><span style="color: rgb(51,
+            51, 51); font-family: Arial, x-locale-body, sans-serif;
+            font-size: 16px; font-style: normal; font-variant-ligatures:
+            normal; font-variant-caps: normal; font-weight: 400;
+            letter-spacing: -0.04448px; orphans: 2; text-align: start;
+            text-indent: 0px; text-transform: none; white-space: normal;
+            widows: 2; word-spacing: 0px; -webkit-text-stroke-width:
+            0px; background-color: rgb(255, 255, 255);
+            text-decoration-style: initial; text-decoration-color:
+            initial; display: inline !important; float: none;">).</span></span></font></p>
+    <p><font size="+1">For exmple: </font><br>
+    </p>
+    <pre class="jm jn jo jp jq hn fe ci" style="box-sizing: inherit; margin: 56px 0px 0px; overflow-x: auto; background: rgba(0, 0, 0, 0.05); padding: 20px; color: rgba(0, 0, 0, 0.8); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><span id="262c" class="kw kx eb aq lt b ee mh mi n mj" data-selectable-paragraph="" style="box-sizing: inherit; font-weight: 400; display: block; font-style: normal; color: rgba(0, 0, 0, 0.84); font-size: 16px; line-height: 1.18; letter-spacing: -0.022em; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace; margin-top: -0.09em; margin-bottom: -0.09em; white-space: pre-wrap;">var firstName='John';<br>var lastName ='Doe';<br><br>var name=`Full name is ${firstName} ${lastName}`;<br>console.log(name) //Full name is John Doe </span><span id="262c" class="kw kx eb aq lt b ee mh mi n mj" data-selectable-paragraph="" style="box-sizing: inherit; font-weight: 400; display: block; font-style: normal; color: rgba(0, 0, 0, 0.84); font-size: 16px; line-height: 1.18; letter-spacing: -0.022em; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace; margin-top: -0.09em; margin-bottom: -0.09em; white-space: pre-wrap;"><br></span></pre>
+    <p><font size="+2"><br>
+      </font></p>
+    <h2><font size="+2">Destructuring Assignment:</font><span> </span></h2>
+    <p style="margin: 0px 0px 24px; padding: 0px; border: 0px;
+      box-sizing: border-box; max-width: 42rem; color: rgb(51, 51, 51);
+      font-family: Arial, x-locale-body, sans-serif; font-size: 16px;
+      font-style: normal; font-variant-ligatures: normal;
+      font-variant-caps: normal; font-weight: 400; letter-spacing:
+      -0.04448px; orphans: 2; text-align: start; text-indent: 0px;
+      text-transform: none; white-space: normal; widows: 2;
+      word-spacing: 0px; -webkit-text-stroke-width: 0px;
+      background-color: rgb(255, 255, 255); text-decoration-style:
+      initial; text-decoration-color: initial;">According to MDN: The<span>&nbsp;</span><strong
+        style="margin: 0px; padding: 0px; border: 0px;">destructuring
+        assignment</strong><span>&nbsp;</span>syntax is a JavaScript
+      expression that makes it possible to unpack values from arrays, or
+      properties from objects, into distinct variables.</p>
+    <p><font size="+1">For example: </font></p>
+    <pre class="jm jn jo jp jq hn fe ci" style="box-sizing: inherit; margin: 56px 0px 0px; overflow-x: auto; background: rgba(0, 0, 0, 0.05); padding: 20px; color: rgba(0, 0, 0, 0.8); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><span id="262c" class="kw kx eb aq lt b ee mh mi n mj" data-selectable-paragraph="" style="box-sizing: inherit; font-weight: 400; display: block; font-style: normal; color: rgba(0, 0, 0, 0.84); font-size: 16px; line-height: 1.18; letter-spacing: -0.022em; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace; margin-top: -0.09em; margin-bottom: -0.09em; white-space: pre-wrap;">var a, b<br>[a,b]=[10,20] //a=10, b=20<br><br>[b,a]= [a,b] // b was assigned to 10, a=20<br>[a, b, ...rest] = [10, 20, 30, 40, 50]; // rest was an array, rest=[30, 40, 50]<br><br></span></pre>
+    <p><br>
+    </p>
+    <p id="whatarearrowfunctions" style="box-sizing: border-box; margin:
+      0px 0px 16px; padding: 0px; direction: ltr; font-family: Roboto,
+      &quot;Helvetica Neue&quot;, Helvetica, Helvetica, Arial,
+      sans-serif; font-weight: 700; font-style: normal; color: rgb(38,
+      38, 38); text-rendering: optimizelegibility; line-height:
+      2.66667rem; font-size: 1.95313rem; letter-spacing: -0.02em;
+      font-variant-ligatures: normal; font-variant-caps: normal;
+      orphans: 2; text-align: start; text-indent: 0px; text-transform:
+      none; white-space: normal; widows: 2; word-spacing: 0px;
+      -webkit-text-stroke-width: 0px; background-color: rgb(255, 255,
+      255); text-decoration-style: initial; text-decoration-color:
+      initial;">Var, let or const</p>
+    <p><font size="+2">ES6 introduced&nbsp; two new ways of creating
+        variables: <i>let</i><i> </i>and <i>const. </i>When a viable
+        was created in JS, it was assigned the initial value
+        'undefined'.&nbsp;<i> <br>
+          <br>
+        </i></font></p>
+    <p><font size="+2">A variable created by using <i>var</i> can be
+        updated and redefined. However, </font><font size="+2">a
+        variable created by using&nbsp; <i>le</i><i>t </i>can be
+        updated, but NOT redefined. </font><font size="+2">A variable
+        created by using&nbsp; <i>const </i>can NOT be updated, or redefined.
+        <br>
+      </font></p>
+    <p><font size="+2">The follow</font><font size="+2">ing codes show
+        the difference between the var, const and let.</font></p>
+    <pre class="jm jn jo jp jq hn fe ci" style="box-sizing: inherit; margin: 56px 0px 0px; overflow-x: auto; background: rgba(0, 0, 0, 0.05); padding: 20px; color: rgba(0, 0, 0, 0.8); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><span id="262c" class="kw kx eb aq lt b ee mh mi n mj" data-selectable-paragraph="" style="box-sizing: inherit; font-weight: 400; display: block; font-style: normal; color: rgba(0, 0, 0, 0.84); font-size: 16px; line-height: 1.18; letter-spacing: -0.022em; font-family: Menlo, Monaco, &quot;Courier New&quot;, Courier, monospace; margin-top: -0.09em; margin-bottom: -0.09em; white-space: pre-wrap;">//Var<br>//define<br><br>var num1 =4;<br>console.log(num1); //return 4<br>//update<br>num1= 10; // success! num1=10<br>console.log(num1) <br><br>//redefine<br>var num1='orange';<br>console.log(num1); //return "orange"<br><br><br><br>//let (can define and update, NO REDEFINE)<br><br>let num2 =4 ;<br>console.log(num2); //return 4<br>//update<br>num2=100; <br>console.log(num2); //return 100<br><br>let num2='orange';<br>console.log(num2); //ERR: can not redefine<br><br><br><br>//const (Can define, can't update and redefine)<br>//define<br>const num3 =5;<br>console.log(num3); //return 5<br>//update<br>num3=100;<br>console.log(num3); //ERR: can't update<br><br>//redefine<br>const num3='orange' ; //ERR: can't redefine<br>console.log(num3);<br></span></pre>
+    <p><font size="+2"><br>
+      </font></p>
+    <p><font size="+2"><br>
+      </font></p>
+  </body>
+</html>
